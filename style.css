@@ -1,0 +1,85 @@
+:root{
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Fira Sans', sans-serif;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+  --font-black: 900;
+
+  --color-white: #FFFFFF;
+  --color-red: #EC0000;
+  --color-green: #05A84B;
+  --color-black: #000000;
+  --color-gray-700: #7D7D7D;
+  --color-gray-100: #FAFAFA;
+  
+
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* ---------------DESKTOP HEADER---------------------- */
+header{
+  display: flex;
+  justify-content: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120rem;
+  
+}
+
+#nav_menu{
+  display: flex;
+  align-items: center;
+  
+}
+
+#nav_menu li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.material-symbols-outlined{
+  font-size: 2.3rem;
+  
+}
+
+
+#nav_menu a{
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.6rem;
+  font-weight: var(--font-medium)
+}
+
+#nav_menu a:hover{
+  color: var(--color-red);
+  
+}
+
+#nav_menu button{
+  background-color: var(--color-red);
+  padding: 10px 24px 11px;
+  border-radius: 2.5rem;
+  border: none;
+
+  color: var(--color-white);
+  font-weight: var(--font-medium);
+}
+
+
+/* ---------------FIM DESKTOP HEADER---------------------- */
