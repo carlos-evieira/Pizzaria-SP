@@ -1,0 +1,30 @@
+
+.banner{
+  max-width: 1280px;
+  margin: 0 auto;
+} 
+
+
+.banner img{
+  width: 100%;
+} 
+
+.slick-dots li button::before, 
+.slick-dots li.slick-active button:before{
+  color:  #EC0000;
+}
+
+.slick-dots li:hover button::before{
+  color:  #ffffff;
+}
+
+.slick-dots li button:before
+{
+    position: absolute;
+    top: -40px;
+    font-size: 15px;
+
+    opacity: .65;
+    color: #ffffff;
+}
+

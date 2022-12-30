@@ -30,16 +30,32 @@
 
 
 /* ---------------DESKTOP HEADER---------------------- */
+body{
+  width: 100%;
+  
+}
+.container{
+  margin: 0 auto;
+  padding: 0 2re;
+}
+
 header{
   display: flex;
   justify-content: center;
+  
+  box-shadow: 7px 0px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  margin-bottom: 15px;
 }
 nav{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 120rem;
+
+  max-width: 128rem;
+  width: 100%;
+  padding: 2rem 0;
   
+  align-items: center;
 }
 
 #nav_menu{
@@ -58,7 +74,6 @@ nav{
   
 }
 
-
 #nav_menu a{
   text-decoration: none;
   color: var(--color-black);
@@ -68,7 +83,6 @@ nav{
 
 #nav_menu a:hover{
   color: var(--color-red);
-  
 }
 
 #nav_menu button{
@@ -83,3 +97,32 @@ nav{
 
 
 /* ---------------FIM DESKTOP HEADER---------------------- */
+
+
+/* CARDS PIZZA */
+.pizzas{
+  display: flex;
+  justify-content: space-between;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.product-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aside-menu{
+  width: 25%;
+  min-width: 28rem;
+  background-color: var(--color-gray-100)
+}
+
+.card{
+  width: 25%;
+  min-width: 28rem;
+}
+
+
+/* FIM CARDS PIZZA */

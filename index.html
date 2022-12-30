@@ -6,56 +6,202 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="icon" type="image/png" href="./img/favicon.png"/>
+  <!-- ----- icones  -->
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    
+
+  <!-- -----fontes --------- -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    
-   <link rel="stylesheet" href="./searchbar.css">
-   <link rel="stylesheet" href="./style.css">
+  <!-- ----Slick Slider---- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+  
+  <link rel="stylesheet" href="./assets/css/banner.css">
+  <link rel="stylesheet" href="./assets/css/searchbar.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Pizzaria SP</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div id="logo">
-        <img src="./img/logo.png" alt="logo pizzaria SP">
-      </div>
-      <ul id="nav_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pizzas</a></li>
-        <li><a href="#">Esfihas</a></li>
-        <li><a href="#">Bebidas</a></li>
-        <li><a href="#">Promoções</a></li>
-        <li><a href="#">Promoções</a></li>
-        <li class="search-bar">
-          <input type="text" class="search-bar__input" placeholder="buscar">
-          <div class="search-bar__btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
+  <div class="container">
+      
+    <header>
+      <nav>
+        <div id="logo">
+          <img src="./assets/img/logo.png" alt="logo pizzaria SP">
+        </div>
+        <ul id="nav_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pizzas</a></li>
+          <li><a href="#">Esfihas</a></li>
+          <li><a href="#">Bebidas</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li class="search-bar">
+            <input type="text" class="search-bar__input" placeholder="buscar">
+            <div class="search-bar__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li class="cart">
+            <span class="material-symbols-outlined">
+              shopping_cart
+              </span>
+          </li>
+            <button>ENTRAR</button>
+          </li>
+        </ul>
+      </nav>
+      
+  
+    </header>
+    <main>
+      <section class="banner-wrapper">
+        <div class="banner">
+          <div class="item"><img src="https://picsum.photos/id/248/1280/500" alt=""></div>
+          <div class="item"><img src="https://picsum.photos/id/249/1280/500" alt=""></div>
+          <div class="item"><img src="https://picsum.photos/id/247/1280/500" alt=""></div>
+          <div class="item"><img src="https://picsum.photos/id/243/1280/500" alt=""></div>
+        </div>
+      </section>
+      <section class="pizzas">
+        <aside class="aside-menu">
+          <h2>Pizzas</h2>
+          <div>
+            <input type="checkbox" name="pizzas" id="pizzas">
+            <label for="pizzas">Premium</label>
           </div>
-        </li>
-        <li class="cart">
-          <span class="material-symbols-outlined">
-            shopping_cart
-            </span>
-        </li>
-          <button>ENTRAR</button>
-        </li>
-      </ul>
-    </nav>
-    
+          <div>
+            <input type="checkbox" name="pizzas" id="pizzas">
+            <label for="pizzas">Vegetariana</label>
+          </div>
+          <div>
+            <input type="checkbox" name="pizzas" id="favoritas">
+            <label for="favoritas">As favoritas</label>
+          </div>
+          <div>
+            <input type="checkbox" name="pizzass" id="originais">
+            <label for="originais">Receitas originais</label>
+          </div>
+          <div>
+            <input type="checkbox" name="pizzas" id="doces">
+            <label for="doces">Doces</label>
+          </div>
+        </aside>
+        <article class="product-cards">
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
+            <h3>cheese Lovers</h3>
+            <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
+            <p class="price"></p>
+            <div>
+              <select name="pizza" id="pizza" >
+                <option selected disabled >Escolha o tamanho</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+          </div>
+        </article>
 
-  </header>
-  <main>
+      </section>
+    </main>
+    <footer>
+  
+    </footer>
+  </div>
 
-  </main>
-  <footer>
+        <!-- -----Jquery CDN ------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- ----Slick Slider---- -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
 
-  </footer>
-   <!-- JavaScript -->
-   <script src="./main.js"></script>
-   
+      <!-- JavaScript -->
+      <script src="./assets/js/banner.js"></script>
+      <script src="./assets/js/main.js"></script>
+     
 </body>
 </html>
