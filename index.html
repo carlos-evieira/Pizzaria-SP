@@ -51,6 +51,9 @@
           <li class="cart">
             <span class="material-symbols-outlined">
               shopping_cart
+              <span class="has-product active" >
+                <span class="product-qtd">2</span>
+              </span>
               </span>
           </li>
             <button>ENTRAR</button>
@@ -69,36 +72,62 @@
           <div class="item"><img src="https://picsum.photos/id/243/1280/500" alt=""></div>
         </div>
       </section>
+      <h2>Pizzas Recomendadas</h2>
       <section class="pizzas">
         <aside class="aside-menu">
-          <h2>Pizzas</h2>
-          <div>
-            <input type="checkbox" name="pizzas" id="pizzas">
-            <label for="pizzas">Premium</label>
-          </div>
-          <div>
-            <input type="checkbox" name="pizzas" id="pizzas">
-            <label for="pizzas">Vegetariana</label>
-          </div>
-          <div>
-            <input type="checkbox" name="pizzas" id="favoritas">
-            <label for="favoritas">As favoritas</label>
-          </div>
-          <div>
-            <input type="checkbox" name="pizzass" id="originais">
-            <label for="originais">Receitas originais</label>
-          </div>
-          <div>
-            <input type="checkbox" name="pizzas" id="doces">
-            <label for="doces">Doces</label>
-          </div>
+          <div class="products">
+            <h2>Pizzas</h2>
+            <div>
+              <input type="checkbox" name="pizzas" id="premium" value="premium">
+              <label for="premium">Premium</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pizzas" id="vegetariana" value="vegetariana">
+              <label for="vegetariana">Vegetariana</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pizzas" id="favoritas" value="favoritas">
+              <label for="favoritas">As favoritas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pizzas" id="originais" value="originais">
+              <label for="originais">Receitas originais</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pizzas" id="doces" value="doces">
+              <label for="doces">Doces</label>
+            </div>
+            <h2>Doces</h2>
+            <div>
+              <input type="checkbox" name="doces" id="doces">
+              <label for="doces">Broto</label>
+            </div>
+            <div>
+              <input type="checkbox" name="doces" id="doces">
+              <label for="doces">Grande</label>
+            </div>
+            <h2>Bebidas</h2>
+            <div>
+              <input type="checkbox" name="doces" id="doces">
+              <label for="doces">Refrigerantes</label>
+            </div>
+            <div>
+              <input type="checkbox" name="doces" id="doces">
+              <label for="doces">Cervejas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="doces" id="doces">
+              <label for="doces">Vinhos</label>
+            </div>
+            <button id="send">Pesquisar</button>
+        </div>
         </aside>
         <article class="product-cards">
           <div class="card">
             <img src="./assets/img/pizza_cheese_lovers.png" alt="cheese_lovers">
-            <h3>cheese Lovers</h3>
+            <h3>Cheese Lovers</h3>
             <p>Combinação de molho alfredo e dois queijos - Romano e Parmesão.</p>
-            <p class="price"></p>
+            <p class="price">R$ 50,00</p>
             <div>
               <select name="pizza" id="pizza" >
                 <option selected disabled >Escolha o tamanho</option>
@@ -188,7 +217,47 @@
 
       </section>
     </main>
-    <footer>
+    <footer >
+      <div class="footer-wrap">
+        <div class="social-medias">
+          <h2>Siga nossas redes socias</h2>
+          <div class="medias">
+            <img src="./assets/img/twitter.png" alt="logo twitter">
+            <img src="./assets/img/instagram.png" alt="logo instagram">
+            <img src="./assets/img/facebook.png" alt="logo facebook">
+          </div>
+        
+        </div>
+        <div class="categories">
+          <p>Cardário</p>
+          <ul>
+            <li>Promoções</li>
+            <li>Pizzas</li>
+            <li>Pizzas Doces</li>
+            <li>Esfihas</li>
+            <li>Bebidas</li>
+            <li>Doces</li>
+          </ul>
+        </div>
+        <div class="customer-service">
+          <p>Atendimento <br> ao cliente</p>
+          <ul>
+            <li>Fale Conosco</li>
+            <li>Pesquisa de Satisfação</li>
+            <li>Pizzas Doces</li>
+            <li>Politica de privacidade</li>
+            <li>Termos de Uso</li>
+          </ul>
+        </div>
+        <div class="about-us">
+          <p>Sobre nós</p>
+          <ul>
+            <li>Sobre Nós</li>
+            <li>Trabalhe com a gente</li>
+            <li>Seja um franqueado</li>
+          </ul>
+        </div>
+      </div>
   
     </footer>
   </div>

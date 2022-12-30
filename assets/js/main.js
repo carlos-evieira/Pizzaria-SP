@@ -32,3 +32,8 @@ function removeClass(){
   input.classList.remove('search-bar__input--active');
   btn.classList.remove('search-bar__btn--active');  
 }
+
+
+
+
+// -------------------filtro produtos menu aside----------------

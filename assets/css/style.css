@@ -17,6 +17,7 @@
   --color-black: #000000;
   --color-gray-700: #7D7D7D;
   --color-gray-100: #FAFAFA;
+  --color-gray-500: #BDBDBD;
   
 
 }
@@ -36,16 +37,18 @@ body{
 }
 .container{
   margin: 0 auto;
-  padding: 0 2re;
+  
 }
 
 header{
   display: flex;
+
   justify-content: center;
   
   box-shadow: 7px 0px 8px 0 rgba(0, 0, 0, 0.2);
   
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+
 }
 nav{
   display: flex;
@@ -53,7 +56,7 @@ nav{
 
   max-width: 128rem;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   
   align-items: center;
 }
@@ -66,7 +69,7 @@ nav{
 
 #nav_menu li {
   list-style-type: none;
-  margin-right: 25px;
+  margin-right: 2.5rem;
 }
 
 .material-symbols-outlined{
@@ -84,10 +87,33 @@ nav{
 #nav_menu a:hover{
   color: var(--color-red);
 }
+li.cart{
+  position: relative;
+}
+.has-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 1.7rem;
+  height:1.7rem;
+  top:-.7rem;
+  left: 1rem;
+  border-radius: 2rem;
+  background-color: red;
+}
+
+.product-qtd{
+  position: absolute;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-family: sans-serif;
+
+}
 
 #nav_menu button{
   background-color: var(--color-red);
-  padding: 10px 24px 11px;
+  padding: 1rem 2.4rem 1.1rem;
   border-radius: 2.5rem;
   border: none;
 
@@ -100,29 +126,196 @@ nav{
 
 
 /* CARDS PIZZA */
+main > h2{
+  text-align: center;
+  font-size: 3.6rem ;
+  font-weight: var(--font-semibold);
+
+  padding: 2rem 0 6rem;
+}
 .pizzas{
   display: flex;
   justify-content: space-between;
   max-width: 128rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .product-cards{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 4rem 0;
 }
 
 .aside-menu{
   width: 25%;
   min-width: 28rem;
-  background-color: var(--color-gray-100)
+  background-color: var(--color-gray-100);
+  padding: 4.7rem;
+  gap: 2rem;
 }
+.aside-menu h2{
+  font-weight: var(--font-semibold);
+  font-size: 2.4rem;
+  line-height: 2.3rem;
+  margin: 3rem 0 .8rem;
+}
+
+.aside-menu label{
+  font-weight: var(--font-regular);
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.aside-menu .products button{
+  width: 15rem;
+  height: 4rem;
+  margin-top: 3rem;
+  
+  background: black;
+  border-radius: 2.5rem;
+  border: none;
+
+  font-weight: var(--font-medium);
+  font-size: 1.6rem;
+  vertical-align: middle;
+
+  color: var(--color-white);
+}
+
+
 
 .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
   width: 25%;
   min-width: 28rem;
+
+  border: 1px solid var(--color-gray-500);
+  
 }
 
 
+.card  h3{
+  padding: 2rem 0 2rem 0;
+  font-size: 2.4rem;
+  font-weight: var(--font-semibold);
+  line-height: 3.2rem;
+}
+
+.card p {
+  font-weight: var(--font-light);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  text-align: center;
+}
+
+.card .price {
+  font-weight: var(--font-semibold);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--color-green);
+
+  padding: 2rem 0 2rem 0;
+
+}
+
+.card select{
+  width: 24rem;
+  height: 4rem;
+
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 2.5rem;
+  padding: 0 1rem ;
+}
+
+.card button{
+  width: 24rem;
+  height: 4rem;
+  margin-top: 1rem;
+  
+  background: #EC0000;
+  border-radius: 2.5rem;
+  border: none;
+
+  font-weight: var(--font-medium);
+  font-size: 1.6rem;
+  vertical-align: middle;
+
+  color: var(--color-white);
+}
+
 /* FIM CARDS PIZZA */
+
+/* --------------Footer------------- */
+footer{
+  max-width: 124rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  
+  
+  
+  background-color:var(--color-gray-100);
+
+}
+footer .footer-wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 8rem 0 8rem;
+}
+.footer-wrap p{
+  font-weight: var(--font-semibold);
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+  color: var(--color-red);
+}
+.footer-wrap li{
+  list-style: none;
+  font-weight: var(--font-regular);
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  color:var(--color-gray-700);
+  cursor: pointer;
+  transition:  .2s;
+}
+
+.footer-wrap li:hover{
+  font-weight: var(--font-semibold)
+}
+
+
+footer .medias{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+footer .social-medias h2{
+  font-weight: var(--font-semibold);
+  font-size: 3.6rem;
+  line-height:4.4rem;
+  color: var(--color-red);
+}
+
+footer .medias img{
+  height: 4.2rem;
+  margin-top: 6rem;
+}
+
+.customer-service> p{
+  margin-bottom: 1.8rem;
+}
+
+
+/* --------------Fim do Footer------------- */
