@@ -11,6 +11,35 @@
   width: 100%;
 } 
 
+.slick-prev, .slick-next{
+  z-index: 1;
+  color: red;
+}
+
+.slick-next:before{
+  font-family: slick;
+  font-size: 2.5rem;
+  line-height: 1;
+  opacity: .85;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: -6rem;
+}
+
+.slick-prev:before {
+  font-family: slick;
+  font-size: 2.5rem;
+  line-height: 1;
+  opacity: .85;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 5.5rem;
+}
+
 .slick-dots li button::before, 
 .slick-dots li.slick-active button:before{
   color:  #EC0000;

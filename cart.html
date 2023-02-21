@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ----- icones  -->
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+   
+
+  <!-- -----fontes --------- -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   
+  <!-- ----Slick Slider---- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+  
+  <link rel="stylesheet" href="./assets/css/cart.css">
+  <link rel="stylesheet" href="./assets/css/searchbar.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Pizzaria SP</title>
+</head>
+
+<body>
+  <div class="container">
+      
+    <header>
+      <nav>
+        <div id="logo">
+          <img src="./assets/img/logo.png" alt="logo pizzaria SP">
+        </div>
+        <ul id="nav_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pizzas</a></li>
+          <li><a href="#">Esfihas</a></li>
+          <li><a href="#">Bebidas</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li class="search-bar">
+            <input type="text" class="search-bar__input" placeholder="buscar">
+            <div class="search-bar__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li class="cart">
+            <span class="material-symbols-outlined">
+              shopping_cart
+              <span class="has-product active" >
+                <span class="product-qtd">2</span>
+              </span>
+              </span>
+          </li>
+            <button>ENTRAR</button>
+          </li>
+        </ul>
+      </nav>
+      
+  
+    </header>
+    <main>
+      <section class="cart-details">
+        <div class="left-column">
+          <h2>Itens escolhidos</h2>
+          <div class="item">
+            <div class="products">
+              <div class="chosen-product">
+                <span>
+                  <img src="./assets/img/pizza_cheese_lovers.png" alt="pizza cheese lovers">
+                </span>
+                <span>
+                  <h4>Cheese Lovers</h4>
+                  <p>Tamanho: <strong>Pequeno</strong></p>
+                  <p> Quantidade: <strong>1</strong> </p>
+                  <h4>R$ 50,00</h4>
+                </span>
+              </div>
+              <span class="product-remove"><a href="#">Remover</a></span>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="chosen-product">
+                <span>
+                  <img src="./assets/img/pizza_cheese_lovers.png" alt="pizza cheese lovers">
+                </span>
+                <span>
+                  <h4>Cheese Lovers</h4>
+                  <p>Tamanho: <strong>Pequeno</strong></p>
+                  <p> Quantidade: <strong>1</strong> </p>
+                  <h4>R$ 50,00</h4>
+                </span>
+              </div>
+              <span class="product-remove"><a href="#">Remover</a></span>
+            </div>
+            <div class="line"></div>
+          </div>
+          
+          <p><a href="#">Continuar comprando</a></p>
+
+
+
+
+          <div class="user-section">
+            <div class="delivery-address">
+              <h2>Endereço de Entrega</h2>
+              <div class="line"></div>
+              <p>Rua das Rosas, 155. São Paulo-SP. CEP 4111-523
+                <span><a>Alterar</a></span>
+              </p>
+              <div class="line"></div>
+            </div>
+            <div class="payment-options">
+              <h2>Opções de Pagamento</h2>
+              <div class="line"></div>
+              <p>Escolher Forma de Pagamento
+                <span><a>Criar</a></span>
+              </p>
+              <div class="line"></div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+        <div class="right-column">
+          <h2>Resumo do Pedido</h2>
+          <div class="subtotal">
+            <span>Subtotal</span>
+            <span>R$ 115,00</span>
+          </div>
+          <div class="shipping">
+            <span>Entrega</span>
+            <span>R$ 10,00</span>
+          </div>
+          <div class="line"></div>
+
+          <div class="total">
+            <span>Total</span>
+            <span>R$ 125,00</span>
+          </div> 
+          <button class="buy">FINALIZAR COMPRA</button>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer >
+      <div class="footer-wrap">
+        <div class="social-medias">
+          <h2>Siga nossas redes socias</h2>
+          <div class="medias">
+            <img src="./assets/img/twitter.png" alt="logo twitter">
+            <img src="./assets/img/instagram.png" alt="logo instagram">
+            <img src="./assets/img/facebook.png" alt="logo facebook">
+          </div>
+        
+        </div>
+        <div class="categories">
+          <p>Cardário</p>
+          <ul>
+            <li>Promoções</li>
+            <li>Pizzas</li>
+            <li>Pizzas Doces</li>
+            <li>Esfihas</li>
+            <li>Bebidas</li>
+            <li>Doces</li>
+          </ul>
+        </div>
+        <div class="customer-service">
+          <p>Atendimento <br> ao cliente</p>
+          <ul>
+            <li>Fale Conosco</li>
+            <li>Pesquisa de Satisfação</li>
+            <li>Pizzas Doces</li>
+            <li>Politica de privacidade</li>
+            <li>Termos de Uso</li>
+          </ul>
+        </div>
+        <div class="about-us">
+          <p>Sobre nós</p>
+          <ul>
+            <li>Sobre Nós</li>
+            <li>Trabalhe com a gente</li>
+            <li>Seja um franqueado</li>
+          </ul>
+        </div>
+      </div>
+  
+    </footer>
+  </div>
+
+        <!-- -----Jquery CDN ------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- ----Slick Slider---- -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+      <!-- JavaScript -->
+      <script src="./assets/js/banner.js"></script>
+      <script src="./assets/js/main.js"></script>
+     
+</body>
+</html>
