@@ -87,6 +87,7 @@
     color: var(--color-black);
 }
 .btn {
+   
     border-radius: 15px;
     text-transform: uppercase;
     color: var(--color-white);
@@ -98,6 +99,7 @@
     align-self: center;
     border: none;
     margin-top: 1rem;
+    margin-left: 2rem;
 }
 .btn-primary {
     background-color: transparent;
@@ -109,6 +111,7 @@
     color: var(--color-green);
 }
 .btn-second {
+    display: block;
     background-color: var(--color-green);
     border: 1px solid var(--color-green);
     transition: background-color .5s;
@@ -170,6 +173,7 @@
 .form input {
     height: 45px;
     width: 100%;
+    padding-left: 30px;
     border: none;
     background-color: #ecf0f1;
 }
@@ -188,20 +192,50 @@ input:-webkit-autofill
     color: #7f8c8d;
     padding: 0 5px;
 }
+small{
+    margin-left: 10px;
+    color: var(--color-red);
+    font-size: 9px;
+    visibility: hidden;
+}
+.form-control{
+    
+    position: relative;
+}
+.form-control i{
+    position: absolute;
+    top: 34px;
+    left: 5px;
+}
 
+.form-control.error small{
+    margin-left: 10px;
+    visibility: visible;
+}
+.form-control.success input{
+    border: 3px solid var(--color-green);
+}
+.form-control.error input{
+    border: 3px solid var(--color-red);
+}
 /* second content*/
 
 .second-content {
     position: absolute;
     display: flex;
+    animation: fadein .5s;
 }
 .second-content .first-column {
     order: 2;
     z-index: -1;
+    animation: fadein .5s;
+
 }
 .second-content .second-column {
     order: 1;
     z-index: -1;
+    animation: fadein .5s;
+
 }
 .password {
     color: #34495e;
@@ -217,6 +251,8 @@ input:-webkit-autofill
 
 .sign-in-js .first-content .first-column {
     z-index: -1;
+    
+    
 }
 
 .sign-in-js .second-content .second-column {
@@ -234,7 +270,7 @@ input:-webkit-autofill
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-
+    
     z-index: 12;
 }
 
@@ -246,15 +282,20 @@ input:-webkit-autofill
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column {
     z-index: -1;
+    animation: deslocamentoEsq 1.3s;
 }
 
 .sign-up-js .first-content .second-column {
     z-index: 11;
+    animation: fadein .5s;
 }
 
 .sign-up-js .first-content .first-column {
     z-index: 13;    
+    animation: fadein .5s;
+    
 }
+
 
 
 /* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
@@ -272,16 +313,29 @@ input:-webkit-autofill
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes deslocamentoEsq {
 
-    from {
+    0% {
         opacity: 1;
         z-index: 12;
     }
 
   
-    to {
+    70% {
         opacity: 0;
         z-index: -1;
     }
@@ -290,13 +344,13 @@ input:-webkit-autofill
 
 @keyframes deslocamentoDir {
 
-    from {
+   0% {
         opacity: 1;
         z-index: 12;
     }
 
 
-    to {
+   70% {
         opacity: 0;
         z-index: -1;
     }
@@ -307,12 +361,12 @@ input:-webkit-autofill
 
 @keyframes slidein {
 
-    from {
+    0% {
         left: 0;
         width: 40%;
     }
 
-    to {
+    100% {
         left: 60%;
         width: 40%;
     }
@@ -320,13 +374,13 @@ input:-webkit-autofill
 
 @keyframes slideout {
 
-    from {
+    0% {
         left: 60%;
         width: 40%;
     }
 
 
-    to {
+    100% {
         left: 0;
         width: 40%;
     }
@@ -370,13 +424,13 @@ input:-webkit-autofill
 
     @keyframes deslocamentoEsq {
 
-        from {
+        0% {
             top:0;
             opacity: 1;
             z-index: 12;
         }
     
-        to {
+        100% {
             top:0;
 
             opacity: 0;
@@ -387,13 +441,13 @@ input:-webkit-autofill
     
     @keyframes deslocamentoDir {
     
-        from {
+        0% {
             top: 0;
             opacity: 0.2;
             z-index: 12;
         }
     
-        to {
+        100% {
             top: 0;
             opacity: 0;
             z-index: -1;
@@ -404,26 +458,26 @@ input:-webkit-autofill
     
     @keyframes slidein {
     
-        from {
+        0% {
             top: 0;
             height: 40%;
         }
     
     
-        to {
+        100% {
             top: 60%;
-            height: 70%;
+            height: 40%;
         }
     }
     
     @keyframes slideout {
     
-        from {
+        0% {
             top: 60%;
-            height: 70%;
+            height: 40%;
         }
         
-        to {
+        100% {
             top: 0%;
             height: 40%;
         }

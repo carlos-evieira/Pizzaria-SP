@@ -23,13 +23,13 @@
         <div class="content first-content">
             <div class="first-column">
                 <h2 class="title title-primary">Bem vindo(a) <br> de volta!</h2>
-                <p class="description description-primary">Para receber nossos produtos</p>
+                <p class="description description-primary">Para realizar seus pedidos</p>
                 <p class="description description-primary">por favor faça seu login</p>
                 <button id="signin" class="btn btn-primary">Entrar</button>
             </div>    
             <div class="second-column">
                 <h2 class="title title-second">Cadastre-se</h2>
-                <div class="social-media">
+                <!-- <div class="social-media">
                     <ul class="list-social-media">
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
@@ -47,24 +47,40 @@
                             </li>
                         </a>
                     </ul>
-                </div><!-- social media -->
-                <p class="description description-second">ou use sua conta de email:</p>
-                <form class="form">
-                    <label class="label-input" for="">
+                </div>social media -->
+                <!-- <p class="description description-second">ou use sua conta de email:</p> -->
+              
+                <form class="form" id="form-register">
+
+                    
+                    <div class="form-control">
+                        <label class="label-input picture"  tabindex="0" for="picture"></label>
+                        <input type="file" id="picture" accept='image/*'  name="picture" placeholder="Escolha sua foto">
+                        <small>Mensagem de erro</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label-input" for="username-register"></label>
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome">
-                    </label>
+                        <input type="text" id="username-register" name="username-register" placeholder="Nome">
+                        <small>Mensagem de erro</small>
+                    </div>
                     
-                    <label class="label-input" for="">
+                    <div class="form-control">
+                            <label class="label-input" for="email-register"> </label>
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                    
+                        <input type="email"  id="email-register" name="username-register" placeholder="Email">
+                       
+                        <small>Mensagem de erro</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label-input" for="password-register"></label>
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" id="password-register" name="password-register" placeholder="Senha">
+                        
+                        <small>Mensagem de erro</small>
+                    </div>
                     
                     <button class="btn btn-second">Cadastrar</button>        
                 </form>
@@ -105,11 +121,15 @@
                         <i class="far fa-envelope icon-modify"></i>
                         <input type="email" placeholder="Email">
                     </label>
+                    <small>Mensagem de erro</small>
+
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
                         <input type="password" placeholder="Senha">
                     </label>
+                    <small>Mensagem de erro</small>
+
                 
                     <a class="password" href="#">Esqueceu sua senha?</a>
                     <button class="btn btn-second">entrar</button>
@@ -117,6 +137,6 @@
             </div><!-- second column -->
         </div><!-- second-content -->
     </div>
-    <script src="./assets/js/register-login.js"></script>
+    <script src="./assets/js/register-login.js" defer></script>
 </body>
 </html>
