@@ -170,6 +170,64 @@
     flex-direction: column;
     width: 55%;
 }
+.form-control{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-control i{
+    position: absolute;
+    top: 34px;
+    left: 5px;
+}
+
+.form-control span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-gray-700);
+}
+
+.form-control.error small{
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding-left: .1rem;
+    padding-top: .8rem;
+    visibility: visible;
+}
+
+.form-control.error small:last-child{
+    padding-bottom: 1rem;
+}
+
+.form-control.success input{
+    border: 3px solid var(--color-green);
+}
+
+.form-control.error input{
+    border: 3px solid var(--color-red);
+}
+
+.form-control .picture{
+    width: 150px;
+    height: 150px;
+    aspect-ratio: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.form-control #picture{
+    display: none;
+}
+
+.form-control .picture-image{
+    max-width: 100%;
+}
+
 .form input {
     height: 45px;
     width: 100%;
@@ -177,47 +235,32 @@
     border: none;
     background-color: #ecf0f1;
 }
+
 input:-webkit-autofill 
 {    
     -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
     -webkit-text-fill-color: #000 !important;
 }
+
 .label-input {
     background-color: #ecf0f1;
     display: flex;
     align-items: center;
     margin: 8px;
 }
+
 .icon-modify {
     color: #7f8c8d;
     padding: 0 5px;
 }
+
 small{
     margin-left: 10px;
     color: var(--color-red);
     font-size: 9px;
     visibility: hidden;
 }
-.form-control{
-    
-    position: relative;
-}
-.form-control i{
-    position: absolute;
-    top: 34px;
-    left: 5px;
-}
 
-.form-control.error small{
-    margin-left: 10px;
-    visibility: visible;
-}
-.form-control.success input{
-    border: 3px solid var(--color-green);
-}
-.form-control.error input{
-    border: 3px solid var(--color-red);
-}
 /* second content*/
 
 .second-content {
@@ -225,39 +268,40 @@ small{
     display: flex;
     animation: fadein .5s;
 }
+
 .second-content .first-column {
     order: 2;
     z-index: -1;
     animation: fadein .5s;
 
 }
+
 .second-content .second-column {
     order: 1;
     z-index: -1;
     animation: fadein .5s;
 
 }
+
 .password {
     color: #34495e;
     font-size: 14px;
     margin: 15px 0;
     text-align: center;
 }
+
 .password::first-letter {
     text-transform: capitalize;
 }
 
-
-
 .sign-in-js .first-content .first-column {
     z-index: -1;
-    
-    
 }
 
 .sign-in-js .second-content .second-column {
     z-index: 11;
 }
+
 .sign-in-js .second-content .first-column {
     z-index: 13;
 }

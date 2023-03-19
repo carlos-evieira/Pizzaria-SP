@@ -13,6 +13,9 @@ btnSignup.addEventListener("click", function () {
     body.className = "sign-up-js";
 })
 
+
+// validação de formulário
+
 const formRegister = document.getElementById('form-register')
 const usernameRegister = document.getElementById('username-register')
 const emailRegister = document.getElementById('email-register')
@@ -58,13 +61,6 @@ function checkInputs(){
         successValidation(passwordRegister)
     }
 
-    
-
-
-
-
-
-
     function errorValidation(input, message){
         const formControl = input.parentElement
         const small = formControl.querySelector('small')
@@ -83,3 +79,38 @@ function checkInputs(){
 
     
 }
+
+
+// trazendo imagem 
+
+const inputFile = document.getElementById('picture')
+const pictureImage = document.querySelector('.picture-image')
+const pictureTxt = `Escolha sua foto <br>
+ <p style="text-align:center; font-size: 40px">\u{1F4F7}</p>`
+
+pictureImage.innerHTML=pictureTxt
+
+inputFile.addEventListener("change", function (e) {
+    const inputTarget = e.target;
+    const file = inputTarget.files[0];
+  
+    if (file) {
+      const reader = new FileReader();
+  
+      reader.addEventListener("load", function (e) {
+        const readerTarget = e.target;
+  
+        const img = document.createElement("img");
+        img.src = readerTarget.result;
+        img.classList.add("picture-img");
+        
+        pictureImage.innerHTML = "";
+        pictureImage.appendChild(img);
+        img.style.maxWidth="100%";
+      });
+  
+      reader.readAsDataURL(file);
+    } else {
+      pictureImage.innerHTML = pictureImageTxt;
+    }
+  });
